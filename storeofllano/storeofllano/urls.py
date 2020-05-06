@@ -6,5 +6,7 @@ from . import views
 urlpatterns = [
     path('',views.index, name='index'),
     path('usuarios/login',views.login_views, name='login'),
+    path('usuarios/logout',views.logout_views, name='logout'),
+    path('usuarios/registro',views.register, name='register'),
     path('admin/', admin.site.urls),
 ]
