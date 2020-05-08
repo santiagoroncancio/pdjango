@@ -24,6 +24,9 @@ def index(request):
     })
 
 def login_views(request):
+    if request.user.is_authenticated:
+        return redirect('index')
+        
     if request.method =='POST':
         username=request.POST.get('username')
         password=request.POST.get('password')
@@ -37,7 +40,7 @@ def login_views(request):
             messages.error(request,'Usuario o contraseña no validos')
 
     return render(request,'users/login.html',{
-
+        'title':'Login - storeofllano',
     })
 
 def logout_views(request):
@@ -46,6 +49,9 @@ def logout_views(request):
     return redirect('login')
 
 def register(request):
+    if request.user.is_authenticated:
+        return redirect('index')
+
     form = RegisterForm(request.POST or None)
 
     if request.method=='POST' and form.is_valid():
@@ -57,6 +63,7 @@ def register(request):
 
 
     return render(request,'users/register.html',{
-        'form':form
+        'form':form,
+        'title':'Registro - storeofllano',
     })
 
