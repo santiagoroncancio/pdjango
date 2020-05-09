@@ -9,6 +9,7 @@ class Product(models.Model):
     description = models.TextField()
     price =  models.DecimalField(max_digits=8,decimal_places=2, default=0.0)
     slug = models.SlugField(null=False, blank=False,unique=True)
+    image = models.ImageField(upload_to='products/',null=False,blank=False)
     created_at = models.DateField(auto_now=True) 
     
     # def save(self, *args, **kwargs):
@@ -29,7 +30,6 @@ def set_slug(sender, instance, *args, **kwargs): #callback
                     )
             )
 
-            instance.slug = slug
+        instance.slug = slug
 
 pre_save.connect(set_slug, sender=Product)
-
