@@ -1,10 +1,9 @@
-{% url 'index' as index %}
 {% url 'login' as login %}
 {% url 'register' as register %}
 {% url 'logout' as logout %}
 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <a href="{{index}}" class="navbar-brand">Store of llano</a>
+    <a href="{% url 'index' %}" class="navbar-brand">Store of llano</a>
 
     <button type="button" name="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navb">
         <span class="navbar-toggler-icon"></span>
