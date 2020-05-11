@@ -5,9 +5,9 @@ Proyecto del curso  aplicaciones web con django de codigofacilito
 - bootstrap
 
 # Estrutura
-Modelo —> Base de datos
-Template —> Capa de presentación 
-Vistas —> Lógica del negocio
+- Modelo —> Base de datos
+- Template —> Capa de presentación 
+- Vistas —> Lógica del negocio
 
 ## Comandos basicos 
 - Crear entorno virtual	--> python3 -m vena env
@@ -23,10 +23,7 @@ Vistas —> Lógica del negocio
 - Uso de imagenes --> Pip install pillow
 
 ## Respaldo de la informacion 
-
-python3 manage.py dumpdata
-python3 manage.py dumpdata products/product
-python3 manage.py dumpdata products/product --format-json --indent=4 > products/fixtures/products.json
+- python3 manage.py dumpdata products.product --format=json --indent=4 > products/fixtures/products.json
 
 ## restaurar informacion
-python3 manage.py loaddataproducts.json
+- python3 manage.py loaddata products.json

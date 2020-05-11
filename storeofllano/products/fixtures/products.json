@@ -1,0 +1,38 @@
+[
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "title": "huawei",
+        "description": "celular de marca huawei",
+        "price": "12.00",
+        "slug": "huawei",
+        "image": "products/Image_not_found.jpg",
+        "created_at": "2020-05-09"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "title": "Cartera",
+        "description": "Cartera bonita",
+        "price": "32.00",
+        "slug": "cartera",
+        "image": "products/Image_not_found_tzN4Ga6.jpg",
+        "created_at": "2020-05-09"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "title": "cartera",
+        "description": "Cartera bonita pero de otro color",
+        "price": "2.00",
+        "slug": "cartera-3e75a979",
+        "image": "products/Image_not_found_jIDEgMP.jpg",
+        "created_at": "2020-05-09"
+    }
+}
+]
