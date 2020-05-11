@@ -22,15 +22,8 @@ Proyecto del curso  aplicaciones web con django de codigofacilito
 - Shell interactiva `python3 manage.py shell`
 - Uso de imagenes `Pip install pillow`
 
-<<<<<<< HEAD
 # Respaldo de la información 
 `python3 manage.py dumpdata products.product --format=json --indent=4 > products/fixtures/products.json`
 
 # Restaurar información
-=======
-# Respaldo de la informacion 
-`python3 manage.py dumpdata products.product --format=json --indent=4 > products/fixtures/products.json`
-
-# restaurar informacion
->>>>>>> 6e27d27eddc565387a41ce186c198573563861bf
 `python3 manage.py loaddata products.json`
