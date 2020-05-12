@@ -8,7 +8,8 @@ from django.contrib.auth import logout
 
 from .forms import RegisterForm
 
-from django.contrib.auth.models import User
+# from django.contrib.auth.models import User
+from users.models import User
 
 from products.models import Product
 
