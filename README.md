@@ -27,3 +27,15 @@ Proyecto del curso  aplicaciones web con django de codigofacilito
 
 # Restaurar información
 `python3 manage.py loaddata products.json`
+
+# Sesiones 
+
+## Crear 
+`request.session['cart_id']='123'`
+
+## Obtener
+`request.session.get('cart_id')`
+`print(valor)`
+
+## Eliminar 
+`request.session['cart_id'] = None`
