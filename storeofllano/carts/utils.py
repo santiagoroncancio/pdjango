@@ -6,10 +6,6 @@ def get_or_create_cart(request):
     cart_id = request.session.get('cart_id')
     cart = Cart.objects.filter(cart_id = cart_id).first()
 
-    print(user)
-    print(cart_id)
-    print(cart)
-
     if cart is None:
         cart = Cart.objects.create(user=user)
         print("El carro esta vacio")
